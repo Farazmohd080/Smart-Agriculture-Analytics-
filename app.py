@@ -6,7 +6,7 @@ from recommendations import recommend_actions
 app = Flask(__name__)
 
 # Load model
-model = joblib.load("models/yield_predictor.pkl")
+model = joblib.load("yield_predictor.pkl")
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
