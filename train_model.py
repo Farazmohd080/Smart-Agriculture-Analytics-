@@ -5,7 +5,7 @@ import joblib
 import os
 
 # Load dataset
-df = pd.read_csv(r'C:\Users\PRASHU YADAV\OneDrive\Desktop\flask\SAA project\crop_data.csv')
+df = pd.read_csv(r'crop_data.csv')
 
 # Encode categorical features
 df = pd.get_dummies(df, columns=['Crop_Type', 'Fertilizer_Used'], drop_first=False)
