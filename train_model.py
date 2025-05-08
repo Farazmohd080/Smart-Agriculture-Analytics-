@@ -27,9 +27,9 @@ model.feature_names_in_ = X.columns
 
 # Save model
 os.makedirs('models', exist_ok=True)
-joblib.dump(model, 'models/yield_predictor.pkl')
+joblib.dump(model, 'yield_predictor.pkl')
 
-print("✅ Model trained and saved as models/yield_predictor.pkl")
+print("✅ Model trained and saved as yield_predictor.pkl")
 
 print("Model expects these features:")
 print(list(X.columns))
